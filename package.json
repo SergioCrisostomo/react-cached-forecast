@@ -1,0 +1,22 @@
+{
+  "name": "react-cached-forecast",
+  "version": "0.0.1",
+  "description": "Weather forecast app based on React and with server caching to minimize forecast API calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "app",
+    "react",
+    "forecast"
+  ],
+  "author": "Sergio Crisostomo",
+  "license": "ISC",
+  "dependencies": {
+    "node-jsx": "^0.13.3",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}
