@@ -1,3 +1,5 @@
+'use strict';
+
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const text = require('../assets/lang');
