@@ -1,22 +1,28 @@
 {
-  "name": "react-cached-forecast",
-  "version": "0.0.1",
-  "description": "Weather forecast app based on React and with server caching to minimize forecast API calls",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "weather",
-    "app",
-    "react",
-    "forecast"
-  ],
-  "author": "Sergio Crisostomo",
-  "license": "ISC",
-  "dependencies": {
-    "node-jsx": "^0.13.3",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
-  }
+	"name": "react-cached-forecast",
+	"version": "0.8.7",
+	"description": "Weather forecast app based on React and with server caching to minimize forecast API calls",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node demo/app.js"
+	},
+	"keywords": [
+		"weather",
+		"app",
+		"react",
+		"forecast"
+	],
+	"author": "Sergio Crisostomo",
+	"license": "ISC",
+	"dependencies": {
+		"node-jsx": "^0.13.3",
+		"react": "^15.2.1",
+		"react-dom": "^15.2.1",
+		"request": "^2.74.0"
+	},
+	"devDependencies": {
+		"express": "^4.14.0",
+		"pug": "^2.0.0-beta4"
+	}
 }
