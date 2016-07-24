@@ -1,0 +1,184 @@
+.fe_day {
+    width: 26px;
+    height: 26px;
+}
+
+#forecast_embed.fe_container {
+    width: 100%;
+    font-weight: 300;
+    min-width: 500px;
+    max-width: 1000px;
+    color: #333;
+    margin: 0 auto;
+    height: 245px;
+}
+
+#forecast_embed.fe_container a {
+    color: #333
+}
+
+#forecast_embed.fe_container .fe_title {
+    position: relative;
+    height: 32px;
+    border-bottom: 2px solid #444;
+}
+
+#forecast_embed.fe_container .fe_title .fe_location {
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    font-size: 18px;
+    font-weight: bold
+}
+
+#forecast_embed.fe_container .fe_title .fe_forecast_link {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    font-size: 14px
+}
+
+#forecast_embed.fe_container .fe_forecast {
+    margin-top: 14px
+}
+
+#forecast_embed.fe_container .fe_currently {
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#forecast_embed.fe_container .fe_currently .fe_temp {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    margin-left: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: .65em;
+}
+
+#forecast_embed.fe_container .fe_currently .fe_temp .fe_dir {
+    display: block;
+    position: relative;
+    left: -5px;
+    display: block;
+    font-size: 14px;
+    font-weight: normal
+}
+
+#forecast_embed.fe_container .fe_currently .fe_summary {
+    font-size: 18px;
+    font-weight: bold
+}
+
+#forecast_embed.fe_container .fe_currently .fe_wind {
+    font-size: 14px
+}
+
+#forecast_embed.fe_container #fe_current_icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px
+}
+
+#forecast_embed.fe_container .fe_daily {
+    float: left;
+    display: table;
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day {
+    display: table-cell;
+    text-align: center;
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day:first-of-type {
+    vertical-align: bottom;
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day .fe_label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100%
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day .fe_temp_bar {
+    position: relative;
+    width: 20px;
+    margin: 18px auto 0;
+    font-size: 12px;
+    border-radius: 200px
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day .fe_high_temp {
+    float: left;
+    width: 100%;
+    top: -16px;
+    left: 2px;
+    color: #666
+}
+
+#forecast_embed.fe_container .fe_daily .fe_day .fe_low_temp {
+    float: left;
+    width: 100%;
+    bottom: -16px;
+    left: 2px;
+    color: #666
+}
+
+#forecast_embed.fe_container .fe_daily .fe_icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-top: 2px;
+    margin-bottom: 5px
+}
+
+#forecast_embed.fe_container .fe_alert {
+    position: absolute;
+    top: 205px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#forecast_embed.fe_container .fe_alert a {
+    text-decoration: underline;
+    text-overflow: ellipsis;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #a00;
+}
+
+#forecast_embed.fe_container .fe_alert a .fe_icon {
+    font-size: 20px
+}
+
+#forecast_embed.fe_container .fe_loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 240px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold
+}
+
+#forecast_embed.fe_container #fe_loading_icon {
+    position: relative;
+    top: 15px;
+    left: -5px
+}
