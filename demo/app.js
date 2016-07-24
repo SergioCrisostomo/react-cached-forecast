@@ -1,15 +1,19 @@
-"use strict";
+'use strict';
+
+console.log('Server start called');
 
 var path = require('path');
 var express = require('express');
 var app = express();
 
+const PORT = process.env.PORT || 3000;
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.set('port', process.env.PORT || 3000);
+app.set('port', PORT);
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/forecast', (function(){
+app.get('/', (function(){
 	let API = require('../index');
 	let forecastKey = require('../config/keys').forecast;
 	let forecast = new API(forecastKey, {units: 'si'});
@@ -26,16 +30,15 @@ app.get('/forecast', (function(){
 	}
 })());
 
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  console.log(err)
-  next(err);
+app.locals.pretty = true;
+app.use(function(err, req, res, next) {
+	console.log(err.message);
+	console.log(err);
+	res.status(err.status || 500);
+	res.end(err.message);
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(PORT, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log('App listening at http://%s:%s', host, port);
