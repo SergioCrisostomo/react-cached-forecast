@@ -1,0 +1,30 @@
+{
+	"weekDays": {
+		"no": ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+		"es": ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+		"en": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+		"de": ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+		"sv": ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"]
+	},
+	"today": {
+		"no": "Idag",
+		"es": "Hoy",
+		"en": "Today",
+		"de": "Heute",
+		"sv": "Idag"
+	},
+	"wind": {
+		"no": "",
+		"es": "",
+		"en": "Wind",
+		"de": "",
+		"sv": "Vind"
+	},
+	"weatherIn": {
+		"no": "",
+		"es": "",
+		"en": "Weather in",
+		"de": "",
+		"sv": "Väder i"
+	}
+}
