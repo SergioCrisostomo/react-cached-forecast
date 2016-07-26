@@ -1,6 +1,6 @@
 {
 	"name": "react-cached-forecast",
-	"version": "0.8.8",
+	"version": "0.8.9",
 	"description": "Weather forecast app based on React and with server caching to minimize forecast API calls",
 	"main": "index.js",
 	"scripts": {
